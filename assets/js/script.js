@@ -63,9 +63,13 @@ async function crearGrafico(moneda) {
                 // Tomar solo los últimos 10 valores
                 const diezFechas = fechas.slice(0, 10).reverse();
                 const diezValores = valores.slice(0, 10).reverse();
+                const areaGrafico = document.querySelector('#areaGrafico');
 
+                //Se agrega primero el area CANVAS
+                areaGrafico.innerHTML=`<canvas id="grafMonedas" class="cls-graficoMonedas"></canvas>`
+
+                //Comienzo de la construcción del grafico
                 const ctx = document.querySelector('#grafMonedas');
-
                 // Destruir la instancia previa antes de crear la nueva
                 if (myChart) {
                         myChart.destroy();
@@ -99,7 +103,7 @@ async function crearGrafico(moneda) {
                 });
         } catch (error) {
                 //En caso de error muestra mensaje en el DOM
-                document.querySelector('#resultado').innerHTML=`<span class="cls-error"> Error al convertir monto </span>`;
+                document.querySelector('#resultado').innerHTML=`<span class="cls-error"> Error al crear gráfico </span>`;
         }
 }
 
