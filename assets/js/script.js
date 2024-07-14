@@ -8,6 +8,7 @@ let moneda;
 let valor;
 let myChart;
 let simboloMoneda;
+
 //Llamada a la API
 async function obtenerDatos(){
         try {
