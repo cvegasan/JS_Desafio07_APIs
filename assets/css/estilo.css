@@ -1,0 +1,75 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000000;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin:20px 0px 0px 0px;
+}
+.cls-conversion {
+    margin:20px 0px 20px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 15%;
+    background-color: #69757D;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.cls-color-titulo{
+    color:white;
+}
+.cls-formato-titulo{
+    padding:10px;
+}
+.cls-tamannio-puntos{
+    padding: 0px 0px 10px 0px;
+    text-align: center;
+    font-size: 16px;
+}
+
+input, select {
+    margin: 10px 0;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 80%;
+}
+button {
+    margin:10px;
+    padding: 10px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 80%;
+}
+button:hover {
+    background-color: #0056b3;
+}
+hr{
+    border-color: #04414B;
+}
+.cls-graficoMonedas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 200px;
+    background-color: white;
+}
+.cls-error{
+    color:yellowgreen;
+}
