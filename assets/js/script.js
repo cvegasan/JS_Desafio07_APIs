@@ -12,10 +12,7 @@ let simboloMoneda;
 //Llamada a la API
 async function obtenerDatos(){
         try {
-                const res = await fetch('https:/mindicador.cl/api');
-                if (res.status == 404){
-                        document.querySelector('#resultado').innerHTML=`<span class="cls-error"> Error al consultar datos </span>`;
-                }
+                const res = await fetch('https://mindicador.cl/api');
                 data = await res.json();
                 return data;
         } catch (error) {
