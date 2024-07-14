@@ -53,9 +53,7 @@ async function crearGrafico(moneda) {
         try {
                  //API con la moneda para obtener los valores
                 const res = await fetch(`https://mindicador.cl/api/${moneda}`);
-                if (res.status == 404){
-                        document.querySelector('#resultado').innerHTML=`<span class="cls-error"> Error al consultar datos </span>`;
-                }
+
                 const data = await res.json();
 
                 // Extraer las fechas y los valores de la moneda filtrada
